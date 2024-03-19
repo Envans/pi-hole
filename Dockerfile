@@ -14,6 +14,9 @@ ENV WEBPASSWORD=password123
 # Optionally, you can add custom DNS settings here
 # COPY 01-custom-dns.conf /etc/dnsmasq.d/01-custom-dns.conf
 
+# Create directories for volumes if they don't exist
+RUN mkdir -p /etc/pihole /etc/dnsmasq.d
+
 # Expose ports
 EXPOSE 53 53/udp 80 443
 
