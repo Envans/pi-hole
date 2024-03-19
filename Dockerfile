@@ -20,8 +20,5 @@ RUN mkdir -p /etc/pihole /etc/dnsmasq.d
 # Expose ports
 EXPOSE 53 53/udp 80 443
 
-# Start Pi-hole on container start
-ENTRYPOINT ["bash", "/start.sh"]
-
 # Optionally, you can specify command to start Pi-hole, if you want to override default
 # CMD ["-d", ""]
