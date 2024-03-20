@@ -1,7 +1,7 @@
 
 # Make this file easier to read
 FROM pihole/pihole:latest
-
+USER root
 # Set timezone
 ENV TZ=America/New_York
 
